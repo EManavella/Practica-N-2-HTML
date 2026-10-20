@@ -1,0 +1,41 @@
+* {color:green; } /*Afecta a todos los elementos del documento*/
+a:link {color:gray } /*enlases todavia no visitados en gris */
+a:visited{color:blue } /*enlases todavia ya visitados en gris */
+a:hover {color:fuchsia } /*mouse encima cambia color a fuchsia */
+a:active {color:red } /*al hacer clic cambia color a rojo */
+p { /*Afecta a todos los <p>*/
+    font-family: arial,helvetica; 
+    font-size: 10px;
+    color:black; } 
+.contenido{ /*Afecta a cualquier elemnto con clase "contenido"*/
+    font-size: 14px;
+    font-weight: bold; }
+
+/*
+<body>
+    <p class="contenido" style="font-weight: normal;"> (Color del texto negro con font-size 14 y font-weight: normal)
+    Este es un texto ...............</p>
+    <table> (Sin clase: solo tendra texto verde)
+        <tr>
+            <td>Y esta es una tabla.......</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.google.com.ar">con un enlace</a></td> (enlase <a> por lo que se aplica la reglas a:...)
+        </tr>
+    </table>
+</body>
+*/
+
+/*
+<body class="contenido"> (Aplica regla de .contenido font-size: 14px y font-weight: bold; a el y sus hijos)
+    <p> Este es un texto................</p> (El peso de la regla <p> tranforma el texto a arial 10px black con un font-weight: bold gracias al padre )
+    <table>
+        <tr>
+            <td>Y esta es una tabla.......</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.google.com.ar">con un enlace</a></td>
+        </tr>
+    </table>
+</body>
+*/

@@ -1,0 +1,31 @@
+p.quitar {      /*Elemento <p> (obligatorio) que tenga la clase "quitar"*/
+color: red; /*texto en color rojo"*/
+}
+*.desarrollo {  /*Cualquier elemento con clase "desarollo"*/
+font-size: 8px; /*establece el tamaño de fuente en 8px*/
+} 
+.importante { /*Cualquier elemento con clase "importante"*/
+font-size: 20px; /*establece el tamaño de fuente en 20px*/
+}
+
+/*
+<p class="desarrollo"> (Aplica regla 2)
+En este primer párrafo trataremos lo siguiente:
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar"> (Aplica regla 1)
+Este párrafo debe ser quitado de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p > (Sin clase)
+En este otro párrafo trataremos otro tema:<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="importante"> (Aplica regla 3)
+Y este es el párrafo más importante de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</ p>
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1> (No se aplica la regla porque falta que seas elemento <P>)
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p> (Aplica regla 1 y 3)
+
+*/

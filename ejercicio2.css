@@ -1,0 +1,22 @@
+
+p#normal { /*Selector compuesto: elemento <p> Y con id="normal"*/
+font-family: arial,helvetica; /* tipografía Arial (si no está, Helvetica). */
+font-size: 11px;                /*tamaño de letra de 11 píxeles. */
+font-weight: bold;      /*negrita.*/
+}
+*#destacado { /*Selector compuesto: * cualquier elemento y con id="normal"*/
+border-style: solid;  /*borde de línea continua.*/
+border-color: blue;  /*color azul.*/
+border-width: 2px;  /*grososr de 2 pixeles.*/
+}
+#distinto { /*Cualquier elemento con id="distinto".*/
+background-color: #9EC7EB;  /*Especifica un color de fondo.*/
+color: red; /* Color de texto en rojo*/
+}
+
+/*
+<p id="normal">Este es un párrafo</p>    ( p#normal Arial 11px negrita)
+<p id="destacado">Este es otro párrafo</p> (*#destacado borde azul 2px)
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table>  (*#destacado borde azul 2px)
+<p id="distinto">Este es el último párrafo</p>  (#distinto texto rojo, fondo celeste)
+*/
